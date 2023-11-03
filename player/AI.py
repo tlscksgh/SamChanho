@@ -315,7 +315,7 @@ class AI:
                             
                     if gametiles[y][x].pieceonTile.tostring()=='k':
                         value = value + 10000
-    return value
+        return value
 
 
     def move(self,gametiles,y,x,n,m):
