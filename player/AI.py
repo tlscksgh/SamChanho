@@ -301,6 +301,11 @@ class AI:
                         if y != 8 and x != 0:
                             if gametiles[y+1][x-1].pieceonTile.tostring()=='q'|'r'|'b'|'n'|'p':
                                 value=value+50
+                    if gametiles[0][x].pieceonTile.tostring()=='q'|'r'|'b'|'n':
+                        value=value-200
+                    if y == 2|3|4|5:
+                        if gametiles[y][x].pieceonTile.tostring()=='q'|'r'|'b'|'n'|'p':
+                            value=value+100
         return value
 
 
