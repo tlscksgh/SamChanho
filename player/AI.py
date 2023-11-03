@@ -251,138 +251,71 @@ class AI:
 
 
    def calculateb(self,gametiles):
-
         value=0
-
         for x in range(8):
-
             for y in range(8):
-
                     if gametiles[y][x].pieceonTile.tostring()=='P':
-
                         value = value - 100
-
                         value = value - y
-
- 
-
+                        
                     if gametiles[y][x].pieceonTile.tostring()=='N':
-
                         value = value - 350
-
                         if (x == 0 or x == 7 or y == 0 or y == 7):
-
                             value = value + 35
-
                         elif ( x == 1 or x == 6 or y == 1 or y == 6):
-
                             value = value + 15
-
                         if (y == 3 or y == 4):
-
-                            value = value - 10                            
-
- 
+                            value = value - 10
 
                     if gametiles[y][x].pieceonTile.tostring()=='B':
-
                         value = value - 350
-
                         if (y == 3 or y == 4):
-
                             value = value - 10
-
- 
-
+                            
                     if gametiles[y][x].pieceonTile.tostring()=='R':
-
                         value = value - 525
-
                         if (y == 3 or y == 4):
-
                             value = value - 10
-
- 
-
+                            
                     if gametiles[y][x].pieceonTile.tostring()=='Q':
-
                         value = value - 1000
-
                         if (y == 3 or y == 4):
-
                             value = value - 10
-
- 
-
+                            
                     if gametiles[y][x].pieceonTile.tostring()=='K':
-
                         value = value - 10000
-
- 
-
+                        
                     if gametiles[y][x].pieceonTile.tostring()=='p':
-
                         value = value + 100
-
                         value = value + (7 - y)
-
- 
-
+                        
                     if gametiles[y][x].pieceonTile.tostring()=='n':
-
                         value = value + 350
-
                         if (x == 0 or x == 7 or y == 0 or y == 7):
-
                             value = value - 25
-
                         elif (x == 1 or x == 6 or y == 1 or y == 6):
-
                             value = value - 15
-
                         if (y == 3 or y == 4):
-
                             value = value + 10
-
- 
-
+                            
                     if gametiles[y][x].pieceonTile.tostring()=='b':
-
                         value = value + 350
-
                         if (y == 3 or y == 4):
-
                             value = value + 10
-
- 
-
+                            
                     if gametiles[y][x].pieceonTile.tostring()=='r':
-
                         value = value + 525
-
                         if (y == 3 or y == 4):
-
                             value = value + 10
-
- 
-
+                            
                     if gametiles[y][x].pieceonTile.tostring()=='q':
-
                         value = value + 1000
-
                         if (y == 3 or y == 4):
-
                             value = value + 10
-
- 
-
+                            
                     if gametiles[y][x].pieceonTile.tostring()=='k':
-
                         value = value + 10000
-
- 
-
-        return value
+    return value
 
 
     def move(self,gametiles,y,x,n,m):
