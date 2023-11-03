@@ -290,15 +290,15 @@ class AI:
                     if gametiles[y][x].pieceonTile.tostring()=='k':
                         value=value+10000
                     if gametiles[y][x].pieceonTile.tostring()=='k':
-                        if y != 8:
+                        if y != 7:
                             if gametiles[y+1][x].pieceonTile.tostring()=='q'|'r'|'b'|'n'|'p':
                                 value=value+50
                     if gametiles[y][x].pieceonTile.tostring()=='k':
-                        if y != 8 and x != 8:
+                        if y != 7 and x != 7:
                             if gametiles[y+1][x+1].pieceonTile.tostring()=='q'|'r'|'b'|'n'|'p':
                                 value=value+50
                     if gametiles[y][x].pieceonTile.tostring()=='k':
-                        if y != 8 and x != 0:
+                        if y != 7 and x != 0:
                             if gametiles[y+1][x-1].pieceonTile.tostring()=='q'|'r'|'b'|'n'|'p':
                                 value=value+50
                     if gametiles[0][x].pieceonTile.tostring()=='q'|'r'|'b'|'n':
